@@ -23,3 +23,7 @@ public:
 	double call_tax;
 	double total_cost;
 };
+//Prototypes Prototypes
+void Input(ifstream &,call_record &);
+void Output(const call_record &);
+void Process(call_record &);
