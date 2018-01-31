@@ -113,13 +113,13 @@ void Output(const call_record & customer_record) {
 	cout.precision(2);
 	cout.setf(ios::fixed);
 	/********************************************/
-	cout<<customer_record.cell_number<<"  ";
-	cout<<customer_record.relays<<"   ";
-	cout<<customer_record.call_length<<endl;
-  cout<<customer_record.net_cost<<endl;
-  cout<<customer_record.tax_rate<<endl;
-  cout<<customer_record.call_tax<<endl;
-  cout<<customer_record.total_cost<<endl;
+	cout<< std::left << setw(30)<< "Cell Phone " <<customer_record.cell_number<<"  "<<endl;
+	cout<< std::left << setw(30)<< "Number of Relay Stations " <<customer_record.relays<<"   "<<endl;
+	cout<< std::left << setw(30)<< "Minutes Used " <<customer_record.call_length<<endl;
+  cout<< std::left << setw(30)<< "Net Cost " <<customer_record.net_cost<<endl;
+  cout<< std::left << setw(30)<< "Tax Rate " <<customer_record.tax_rate<<endl;
+  cout<< std::left << setw(30)<< "Call Tax " <<customer_record.call_tax<<endl;
+  cout<< std::left << setw(30)<< "Total Cost of Call " <<customer_record.total_cost<<endl<<endl;
 
   return;
 }
